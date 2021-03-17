@@ -148,17 +148,14 @@ def write_cover_letter(id, job_title, division, company, street, city, province,
     document.add_paragraph(city.text + ", " + province.text + ", " + postalcode.text)
     document.add_paragraph()
     document.add_paragraph("Dear Hiring Manager,")
-    document.add_paragraph("These are just some of the skills I possess that would make me a great fit for "
-                           + company.text + ". I would love to answer any questions or talk more about my experiences"
-                                            " in an interview. Thank you for your time.")
     document.add_paragraph()
     document.add_paragraph("Sincerely,")
     document.add_paragraph("NAME")
 
-    document.save("C:/Users/bobco/Documents/Resume Stuff/Cover Letters/" + id + ".docx")
+    document.save("SAVE LOCATION/" + id + ".docx")
 
 
-driver = webdriver.Chrome(executable_path='C:/Users/bobco/Documents/chromedriver_win32/chromedriver')
+driver = webdriver.Chrome(executable_path='C:/Users/USER/Documents/chromedriver_win32/chromedriver')
 driver.get("https://waterlooworks.uwaterloo.ca")
 
 login()
